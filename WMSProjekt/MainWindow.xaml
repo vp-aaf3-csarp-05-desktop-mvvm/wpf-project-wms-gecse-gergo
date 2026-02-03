@@ -11,6 +11,13 @@
     </Window.DataContext>
     <StackPanel>
         <Label>Név:</Label>
+        <Label Content="Név:"/>
         <TextBlock Text="{Binding Name}"/>
+        <Label Content="Adószám:"/>
+        <TextBlock Text="{Binding TaxNumber}"/>
+        <StackPanel Orientation="Horizontal">
+            <Label Content="Szabadnapok száma::"/>
+            <TextBlock Text="{Binding FreeDays}"/>
+        </StackPanel>
     </StackPanel>
 </Window>
